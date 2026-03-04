@@ -5,6 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from app.services.pdf_service import generate_pdf_bytes
 from app.services.data_service import fetch_invoice_data, fetch_sales_data
+from fastapi.middleware.cors import CORSMiddleware
 from app.api.demo_router import router as demo_router
 import requests
 
